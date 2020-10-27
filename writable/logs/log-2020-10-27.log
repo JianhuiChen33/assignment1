@@ -1,0 +1,81 @@
+CRITICAL - 2020-10-27 02:30:05 --> readfile(D:\xampp\htdocs\assignment1\writable\data/1.jpg): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(D:\\xam...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\assignment1\app\Controllers\Media.php(13): readfile('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Media->image('1.jpg')
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#4 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-27 02:30:35 --> readfile(D:\xampp\htdocs\assignment1\writable\data/D:): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(D:\\xam...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\assignment1\app\Controllers\Media.php(13): readfile('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Media->image('D:', 'xampp', 'htdocs', 'assignment1', 'pic', '1.jpg')
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#4 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-27 02:30:48 --> readfile(D:\xampp\htdocs\assignment1\writable\data/D:): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(D:\\xam...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\assignment1\app\Controllers\Media.php(13): readfile('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Media->image('D:', 'xampp', 'htdocs', 'assignment1', 'pic', '1.jpg')
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#4 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-10-27 02:32:41 --> Use of undefined constant GK - assumed 'GK' (this will throw an Error in a future version of PHP)
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'D:\\xampp\\htdocs...', 28, Array)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('1')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:45:19 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('pic')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:45:55 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('pic')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:50:42 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('1.jpg')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:50:56 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('1.jpg')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:51:41 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('1.jpg')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 02:52:12 --> Argument 1 passed to CodeIgniter\View\Parser::setData() must be of the type array, null given, called in D:\xampp\htdocs\assignment1\app\Controllers\Travel.php on line 34
+#0 D:\xampp\htdocs\assignment1\app\Controllers\Travel.php(34): CodeIgniter\View\Parser->setData(NULL)
+#1 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Travel->showme('image', '1.jpg')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Travel))
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-10-27 03:06:00 --> readfile(D:\xampp\htdocs\assignment1\writable\data/pic/japan.jpg): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'readfile(D:\\xam...', 'D:\\xampp\\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\assignment1\app\Controllers\Media.php(13): readfile('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(914): App\Controllers\Media->image('japan.jpg')
+#3 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#4 D:\xampp\htdocs\assignment1\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\assignment1\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
