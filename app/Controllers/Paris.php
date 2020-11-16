@@ -18,9 +18,33 @@
              // get a template parser
               $parser = \Config\Services::parser(); 
                // tell it about the substitions 
-              return $parser->setData(['records' => $records]) 
-                      // and have it render the template with those
-                      ->render('playerlist'); 
+              $table = new \CodeIgniter\View\Table();
+        $headings = $player->fields;
+        $displayHeadings = array_slice($headings, 1, 2);
+        $table->setHeading(array_map('ucfirst', $displayHeadings));
+        foreach ($records as $record) {
+       
+        $nameLink = anchor("paris/showme/$record->id", $record->name); 
+                $table->addRow($nameLink, $record->height);
+        }
+
+        $template = [
+            'table_open' => '<table cellpadding="5px">',
+            'cell_start' => '<td style="border: 1px solid #dddddd;">',
+            'row_alt_start' => '<tr style="background-color:#dddddd">',
+        ];
+        $fields = [
+            'title' => 'Travel Destinations',
+            'heading' => 'Travel Destinations',
+            'footer' => 'Jianhui Chen'
+        ];   
+        $table->setTemplate($template);
+        return $parser->setData($fields)
+                        ->render('templates\top') .
+                $table->generate() .
+                        $parser->setData($fields)
+                        ->render('templates\bottom');
+     
             }
              public function showme($id)     
              {
@@ -30,11 +54,37 @@
                   $record = $player->find($id); 
                    // get a template parser 
                    $parser = \Config\Services::parser(); 
-                    // tell it about the substitions 
-                    return $parser->setData($record) 
-                             // and have it render the template with those 
-                             ->render('oneplayer'); 
-             } 
+                  $table = new \CodeIgniter\View\Table(); 
+        // tell it about the substitions 
+        $headings = $player->fields;
+
+                $table->addRow( $record['id']);
+                $table->addRow( $record['name']);
+                $table->addRow( $record['height']);
+                $table->addRow( $record['weight']);
+                $table->addRow( $record['Position']);
+                $table->addRow( $record['Age']);
+                $table->addRow( $record['Country']);
+                $table->addRow( "<img src=\"/image/".$record['image']."\"/>");
+                $table->addRow( $record['Played for the team']);
+          $template = [
+            'table_open' => '<table cellpadding="5px">',
+            'cell_start' => '<td style="border: 1px solid #dddddd;">',
+            'row_alt_start' => '<tr style="background-color:#dddddd">',
+        ];
+                $fields = [
+            'title' => 'One Place',
+            'heading' => 'One Place',
+            'footer' => '(Jianhui Chen)'
+        ];   
+                // and have it render the template with those 
+                        $table->setTemplate($template);
+                        return $parser->setData($fields)
+                        ->render('templates\top') .
+                $table->generate() .
+                        $parser->setData($fields)
+                        ->render('templates\bottom');
+    }
  
          } 
  

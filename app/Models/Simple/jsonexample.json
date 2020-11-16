@@ -1,0 +1,6 @@
+﻿{ "code" : "burger",
+"qty" : 1,
+"price" : 5.00 }
+{ "code" : "fries",
+"qty" : 1,
+"price" : 2.00 }

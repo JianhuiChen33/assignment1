@@ -1,15 +1,15 @@
 <?php
 namespace App\Models;
-
+use App\Models\Simple\JSONModel;
 /*
  * Mock travel destination data.
  * Note that we don't have to extend CodeIgniter's model for now
  */
 
-class Player {
+class Player extends JSONModel{
 
     //mock data : an array of records
-    protected $data = [
+    /*protected $data = [
         '1' => [
             'id' => 1,
             'name' => 'Keylor Navas',
@@ -87,6 +87,7 @@ class Player {
             return $this->data[$id];
         }
         return null;
-    }
-
+    }*/
+protected $origin = WRITEPATH . 'data/pic/data.json';
+    protected $keyField = 'id'; protected $validationRules = [];
 }
